@@ -1,0 +1,26 @@
+.nav__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left:0;
+
+    background-color: #ff5a43;
+  
+    transition: all 0.5s ease;
+
+    list-style: none;
+
+    z-index: 8;
+  }
+/* 
+  .nav__items.active {
+    left: 0;
+    transition: all 0.5s ease;
+    z-index: 1;
+  } */
