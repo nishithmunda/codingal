@@ -15,7 +15,7 @@ const Timer = () => {
     const intervalId = setInterval(() => {
       dispatch(
           setTime({time:timer - 1}));
-    }, 1000);
+    }, 60000);
 
     return () => clearInterval(intervalId);
     }, [timer]);
