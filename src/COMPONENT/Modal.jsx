@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Modal.css'
 
-function Modal({showModal, openModal}){
+function Modal({showModal, openModal,openModal__cancel,openModal__end}){
    const[reasonState,setReasonState]=useState(false)
    const[testAreaState,setTestAreaState]=useState(false)
     return(
@@ -54,10 +54,10 @@ function Modal({showModal, openModal}){
                      </div>:null}
 
                     <div className='modal__buttons'>
-                     <button className='modal__button__endclass' onClick={openModal}>
+                     <button className='modal__button__endclass' onClick={openModal__end}>
                          End Class
                      </button>
-                     <button className='modal__button__cancel' onClick={openModal}>
+                     <button className='modal__button__cancel' onClick={openModal__cancel}>
                          Cancel
                      </button>
                     </div>

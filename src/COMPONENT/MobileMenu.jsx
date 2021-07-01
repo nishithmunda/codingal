@@ -1,5 +1,5 @@
 import React from 'react'
-import CloseIcon from './CloseIcon'
+import CloseIcon from './ICON/CloseIcon'
 import './MobileMenu.css'
 
 function MobileMenu({showModal, openModal,handleClick}){
