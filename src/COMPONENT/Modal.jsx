@@ -4,6 +4,12 @@ import './Modal.css'
 function Modal({showModal, openModal,openModal__cancel,openModal__end}){
    const[reasonState,setReasonState]=useState(false)
    const[testAreaState,setTestAreaState]=useState(false)
+   const[completeClass,setCompleteClass]=useState('')
+
+   function onValueChange(e){
+     setCompleteClass(e.target.value);
+   }
+
     return(
         <>
         {
@@ -12,12 +18,12 @@ function Modal({showModal, openModal,openModal__cancel,openModal__end}){
                 <h2>Select a reason to end class</h2>
                 <div className='radio__buttons__list'>
                  <div className='radio__button'>  
-                  <input type='radio' name='class' value='completed' id='completed' onClick={()=>setReasonState(false)}/>
+                  <input type='radio' name='class' value='completed' id='completed' onClick={()=>setReasonState(false)} onChange={onValueChange}/>
                   <label for='completed'>Completed</label>
                  </div> 
 
                  <div className='radio__button'>  
-                  <input type='radio' name='class' value='aborted' id='aborted' onClick={()=>setReasonState(true)}/>
+                  <input type='radio' name='class' value='aborted' id='aborted' onClick={()=>setReasonState(true)} onChange={onValueChange}/>
                   <label for='aborted'>Class interrupted/Aborted</label>
                  </div> 
                      { reasonState ? <div className='reason__to__disconnect'>

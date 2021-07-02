@@ -44,6 +44,14 @@
 
     align-items: center;
 }
+.link{
+    text-decoration: none;
+    color: #111;
+    cursor: pointer;
+}
+.link:hover{
+    color:#ff5a43
+}
 
 @media (min-width: 320px) and (max-width: 480px) { 
     .navbar{
@@ -62,6 +70,10 @@
 
     .menu__icon{
         display: block;
+    }
+
+    .link{
+        display: none;
     }
     
 }

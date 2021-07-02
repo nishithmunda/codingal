@@ -18,9 +18,13 @@
 
     z-index: 8;
   }
-/* 
-  .nav__items.active {
-    left: 0;
-    transition: all 0.5s ease;
-    z-index: 1;
-  } */
+
+  .link__mobile{
+    text-decoration: none;
+    color: #111;
+    cursor: pointer;
+  }
+  .link__mobile:hover{
+    color:#ff5a43
+  }
+
